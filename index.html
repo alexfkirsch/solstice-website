@@ -15,7 +15,7 @@
     --sans: 'DM Sans', -apple-system, sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { font-size: 16px; }
+  html { font-size: 16px; scroll-behavior: smooth; }
   body { font-family: var(--sans); color: var(--ink); background: var(--cream); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   ::selection { background: var(--amber-light); color: var(--ink); }
 
@@ -378,6 +378,7 @@
       <div class="section-label" style="color:var(--amber-light)">For Fellows</div>
       <div class="page-title">This isn't about logging hours.</div>
       <p class="page-intro">It's about leveraging what you know to solve a problem that matters, and becoming a stronger professional in the process. Solstice Fellows are young professionals who donate their specialized skills through project-based consulting engagements with nonprofits.</p>
+      <a href="#fellow-apply" class="btn btn-amber" style="margin-top:1.5rem;display:inline-block">Apply Now <span class="btn-arrow">→</span></a>
     </div>
   </div>
   <div class="section bg-dark" style="padding-top:2rem">
@@ -413,11 +414,11 @@
       </div>
     </div>
   </div>
-  <div class="section bg-dark" style="position:relative;overflow:hidden">
-    <div style="position:absolute;bottom:-20%;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(200,137,46,0.1) 0%,transparent 70%);pointer-events:none"></div>
+  <div class="section bg-cream" id="fellow-apply" style="position:relative;overflow:hidden">
+    <div style="position:absolute;bottom:-20%;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(200,137,46,0.08) 0%,transparent 70%);pointer-events:none"></div>
     <div class="section-inner" style="position:relative;z-index:1">
-      <div class="reveal"><div class="section-label" style="color:var(--amber-light)">Apply</div><div class="section-title" style="color:var(--cream)">Become a Solstice Fellow.</div></div>
-      <form class="form-card on-dark reveal" style="margin-top:2rem" action="https://formspree.io/f/mwvnwkea" method="POST">
+      <div class="reveal"><div class="section-label">Apply</div><div class="section-title">Become a Solstice Fellow.</div></div>
+      <form class="form-card on-light reveal" style="margin-top:2rem" action="https://formspree.io/f/mwvnwkea" method="POST">
         <input type="hidden" name="_subject" value="New Fellow Application">
         <input type="hidden" name="_next" value="https://joinsolsticefoundation.org">
         <h3>Fellow Application</h3>
@@ -441,6 +442,7 @@
       <div class="section-label">For Nonprofits</div>
       <div class="page-title">Expert help. No cost.<br>Real results.</div>
       <p class="page-intro">Solstice Fellows are skilled young professionals who volunteer through scoped, managed consulting engagements, solving the operational challenges your team doesn't have the bandwidth or specialized expertise to tackle alone.</p>
+      <a href="#np-inquiry" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block">Start a Partnership <span class="btn-arrow">→</span></a>
     </div>
   </div>
   <div class="section bg-cream" style="padding-top:2rem">
@@ -477,7 +479,7 @@
       </div>
     </div>
   </div>
-  <div class="section bg-white">
+  <div class="section bg-cream" id="np-inquiry">
     <div class="section-inner">
       <div class="reveal"><div class="section-label">Join the Network</div><div class="section-title">Apply to become a Solstice Partner.</div><p class="section-subtitle">We work with nonprofits of all sizes across New York and Massachusetts.</p></div>
       <form class="form-card on-light reveal" style="margin-top:2.5rem" action="https://formspree.io/f/maqdlyyw" method="POST">
