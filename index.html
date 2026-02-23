@@ -166,6 +166,8 @@
   .service-icon { width: 44px; height: 44px; background: var(--cream); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.3rem; }
   .service-card h3 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.6rem; }
   .service-card p { font-size: 0.9rem; color: var(--slate); line-height: 1.6; }
+  .service-card.full-width { grid-column: 1 / -1; text-align: center; max-width: 480px; margin: 0 auto; justify-self: center; }
+  .service-card.full-width .service-icon { margin-left: auto; margin-right: auto; }
 
   /* ==================== TIMELINE ==================== */
   .timeline { margin-top: 3rem; max-width: 700px; }
@@ -329,13 +331,13 @@
         <div class="eco-card fellows-card reveal">
           <div class="eco-card-label">For Professionals</div>
           <h3>Become a Solstice Fellow</h3>
-          <p>Volunteer your professional skills in software, finance, marketing, strategy, design, or data through a curated consulting engagement with a nonprofit partner. Build real impact, real skills, and a track record of work that matters.</p>
+          <p>Solstice builds structured consulting engagements around whatever professional expertise you bring. Whether your background aligns with one of our common project types or you have something entirely different in mind, we'll scope a project that puts your best skills to work for a nonprofit partner.</p>
           <a class="btn btn-cream-outline" onclick="navigate('fellows')">Learn More <span class="btn-arrow">→</span></a>
         </div>
         <div class="eco-card np-card reveal">
           <div class="eco-card-label">For Nonprofits</div>
           <h3>Join the Solstice Partner Network</h3>
-          <p>Get a dedicated, skilled volunteer to tackle the operational challenges your team doesn't have the bandwidth to solve. Think a custom database, a fundraising strategy, or a financial model, all at no cost to your organization.</p>
+          <p>Get a dedicated, skilled volunteer to tackle the challenges your team doesn't have the bandwidth to solve. From custom software to financial modeling to projects we haven't thought of yet, we'll work with you to define the right engagement for your needs, all at no cost.</p>
           <a class="btn btn-secondary" onclick="navigate('nonprofits')">Learn More <span class="btn-arrow">→</span></a>
         </div>
       </div>
@@ -392,7 +394,7 @@
   </div>
   <div class="section bg-cream">
     <div class="section-inner">
-      <div class="reveal"><div class="section-label">What You'll Work On</div><div class="section-title">Six engagement types, each with a defined scope.</div><p class="section-subtitle">Every Solstice project follows a proven format: a clear problem, a specific deliverable, and a timeline. You know exactly what you're signing up for before you commit.</p></div>
+      <div class="reveal"><div class="section-label">What You'll Work On</div><div class="section-title">Proven engagement types and room for your own ideas.</div><p class="section-subtitle">Most Solstice projects fall into one of these categories, each with a clear problem, a specific deliverable, and a timeline. But if you have a skill or project idea that doesn't fit neatly below, we want to hear about it. We'll work with you to scope something custom.</p></div>
       <div class="services-grid">
         <div class="service-card reveal"><div class="service-icon">⟨/⟩</div><h3>Custom Software &amp; Systems</h3><p>Databases, scheduling tools, intake platforms, and internal systems built to specification. You'll ship working software that a nonprofit team uses every day.</p></div>
         <div class="service-card reveal"><div class="service-icon">◎</div><h3>Donor Engagement Strategy</h3><p>Communications audits, donor segmentation, campaign architecture, and annual appeal redesigns. Strategic fundraising work with measurable revenue impact.</p></div>
@@ -400,6 +402,7 @@
         <div class="service-card reveal"><div class="service-icon">◈</div><h3>Digital Presence &amp; Marketing</h3><p>Website redesigns, social media strategies, brand refreshes, and content systems. You'll build the digital presence an organization needs to reach more people.</p></div>
         <div class="service-card reveal"><div class="service-icon">⬡</div><h3>Operations &amp; Process Improvement</h3><p>Workflow mapping, volunteer management systems, and program delivery optimization. Structural improvements that free up hours of staff time every week.</p></div>
         <div class="service-card reveal"><div class="service-icon">✦</div><h3>Impact Analytics &amp; Reporting</h3><p>Data collection frameworks, live dashboards, and polished reports ready for grant applications and board presentations. The numbers that prove the work.</p></div>
+        <div class="service-card full-width reveal"><div class="service-icon">✧</div><h3>Something Only You Can Do</h3><p>Have a skill or project idea that doesn't fit the categories above? We're interested in what you're best at, not only what's on our list. Propose your idea and Solstice will work with you and a partner nonprofit to scope a bespoke engagement around it.</p></div>
       </div>
     </div>
   </div>
@@ -407,8 +410,8 @@
     <div class="section-inner">
       <div class="reveal"><div class="section-label">Your Journey</div><div class="section-title">Four steps from application to impact report.</div></div>
       <div class="timeline">
-        <div class="timeline-item reveal"><div class="timeline-marker">1</div><div class="timeline-content"><h4>Apply</h4><p>Submit your background, skills, and areas of interest. We review applications on a rolling basis and respond within two weeks.</p></div></div>
-        <div class="timeline-item reveal"><div class="timeline-marker">2</div><div class="timeline-content"><h4>Get matched</h4><p>We pair you with a nonprofit project that fits your expertise and professional goals. You receive a full project brief, including scope, timeline, and deliverable, before you commit.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-marker">1</div><div class="timeline-content"><h4>Apply</h4><p>Submit your background, skills, and areas of interest. If you have a specific project idea or type of work in mind, include that too. We review applications on a rolling basis and respond within two weeks.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-marker">2</div><div class="timeline-content"><h4>Get matched</h4><p>We pair you with a nonprofit project that fits your expertise and goals. If your skills call for something outside our standard categories, we'll co-design a custom project with you and the partner nonprofit. You receive a full brief before you commit.</p></div></div>
         <div class="timeline-item reveal"><div class="timeline-marker">3</div><div class="timeline-content"><h4>Execute with support</h4><p>Work directly with the nonprofit team over a 6 to 12 week engagement. Solstice manages the project throughout: kickoff, check-ins, milestone tracking, and stakeholder communication.</p></div></div>
         <div class="timeline-item reveal"><div class="timeline-marker">4</div><div class="timeline-content"><h4>Deliver and document</h4><p>Hand off the finished deliverable. Solstice produces a documented impact report covering the problem, your approach, and the results. It's yours to share on LinkedIn, in interviews, or with your employer.</p></div></div>
       </div>
@@ -425,10 +428,10 @@
         <p class="form-intro">Tell us about yourself. We review applications on a rolling basis and will be in touch within two weeks.</p>
         <div class="form-row"><div class="form-group"><input type="text" name="name" placeholder="Full name" required></div><div class="form-group"><input type="email" name="email" placeholder="Email address" required></div></div>
         <div class="form-row"><div class="form-group"><input type="tel" name="phone" placeholder="Phone number"></div><div class="form-group"><input type="url" name="linkedin" placeholder="LinkedIn URL"></div></div>
-        <div class="form-row"><div class="form-group"><input type="text" name="role" placeholder="Current role &amp; company" required></div><div class="form-group"><select name="expertise" required><option value="" disabled selected>Area of expertise</option><option>Software & Technology</option><option>Finance & Accounting</option><option>Marketing & Communications</option><option>Operations & Strategy</option><option>Data & Analytics</option><option>Design & Creative</option><option>Other</option></select></div></div>
+        <div class="form-row"><div class="form-group"><input type="text" name="role" placeholder="Current role &amp; company" required></div><div class="form-group"><select name="expertise" required><option value="" disabled selected>Area of expertise</option><option>Software & Technology</option><option>Finance & Accounting</option><option>Marketing & Communications</option><option>Operations & Strategy</option><option>Data & Analytics</option><option>Design & Creative</option><option>Something else (describe above)</option></select></div></div>
         <div class="form-row"><div class="form-group"><select name="experience"><option value="" disabled selected>Years of professional experience</option><option>Less than 2</option><option>2-5</option><option>5-10</option><option>10+</option></select></div><div class="form-group"><select name="hours"><option value="" disabled selected>Hours per week available</option><option>3-5</option><option>5-10</option><option>10-15</option><option>15+</option></select></div></div>
         <div class="form-group"><select name="referral"><option value="" disabled selected>How did you hear about Solstice?</option><option>Friend or colleague</option><option>Social media</option><option>Search engine</option><option>Event</option><option>News or press</option><option>Other</option></select></div>
-        <div class="form-group"><textarea name="motivation" placeholder="Tell us about yourself: what you do, what drives you, and why you want to volunteer your skills." required></textarea></div>
+        <div class="form-group"><textarea name="motivation" placeholder="Tell us about yourself: what you do, what drives you, and why you want to volunteer your skills. If you have a specific project idea or type of work in mind, we'd love to hear about it." required></textarea></div>
         <button type="submit" class="btn btn-amber form-submit">Submit Application <span class="btn-arrow">→</span></button>
       </form>
     </div>
@@ -458,7 +461,7 @@
   </div>
   <div class="section bg-white">
     <div class="section-inner">
-      <div class="reveal"><div class="section-label">Our Services</div><div class="section-title">What a Solstice Fellow can do for you.</div><p class="section-subtitle">A defined menu of high-impact project types, refined to deliver consistent, meaningful results.</p></div>
+      <div class="reveal"><div class="section-label">Our Services</div><div class="section-title">What a Solstice Fellow can do for you, and beyond.</div><p class="section-subtitle">These are our most common engagement types, refined to deliver consistent, meaningful results. If your biggest challenge doesn't fit one of these categories, tell us about it anyway. We'll design the right project together.</p></div>
       <div class="services-grid">
         <div class="service-card reveal"><div class="service-icon">⟨/⟩</div><h3>Custom Software &amp; Systems</h3><p>Databases, scheduling tools, intake systems, and internal platforms built to solve the operational pain points holding your organization back.</p></div>
         <div class="service-card reveal"><div class="service-icon">◎</div><h3>Donor Engagement Strategy</h3><p>Communications audits, donor segmentation, campaign planning, and appeal redesigns that help you raise more with the supporters you already have.</p></div>
@@ -466,6 +469,7 @@
         <div class="service-card reveal"><div class="service-icon">◈</div><h3>Digital Presence &amp; Marketing</h3><p>Website overhauls, social media strategy, brand refreshes, and content systems. The digital infrastructure your organization needs to reach more people.</p></div>
         <div class="service-card reveal"><div class="service-icon">⬡</div><h3>Operations &amp; Process Improvement</h3><p>Workflow mapping, volunteer management systems, and program delivery optimization that free up your staff's time for what matters most.</p></div>
         <div class="service-card reveal"><div class="service-icon">✦</div><h3>Impact Analytics &amp; Reporting</h3><p>Data collection frameworks, dashboard design, and polished reports you can drop straight into grant applications and board presentations.</p></div>
+        <div class="service-card full-width reveal"><div class="service-icon">✧</div><h3>Your Challenge, Your Way</h3><p>If your organization's biggest need doesn't fit the categories above, tell us about it. Solstice will work with you to define and scope a custom engagement around whatever matters most to your team.</p></div>
       </div>
     </div>
   </div>
@@ -473,8 +477,8 @@
     <div class="section-inner">
       <div class="reveal"><div class="section-label">Getting Started</div><div class="section-title">Three steps to a stronger organization.</div></div>
       <div class="np-steps">
-        <div class="np-step reveal"><div class="np-step-num">01</div><h4>Tell us what you need</h4><p>Submit an inquiry and we'll schedule a conversation to understand your challenges and where a skilled volunteer could make the biggest difference.</p></div>
-        <div class="np-step reveal"><div class="np-step-num">02</div><h4>We scope the project</h4><p>Together, we'll define a project brief with clear deliverables, a realistic timeline, and success metrics so everyone knows what "done" looks like.</p></div>
+        <div class="np-step reveal"><div class="np-step-num">01</div><h4>Tell us what you need</h4><p>Submit an inquiry describing your challenge, even if it doesn't fit a predefined category. We'll schedule a conversation to understand your situation and where a skilled volunteer could make the biggest difference.</p></div>
+        <div class="np-step reveal"><div class="np-step-num">02</div><h4>We design the engagement together</h4><p>In a collaborative scoping process, we'll define a project brief based on your actual needs: clear deliverables, a realistic timeline, and success metrics so everyone knows what "done" looks like.</p></div>
         <div class="np-step reveal"><div class="np-step-num">03</div><h4>Meet your Fellow</h4><p>We match a Solstice Fellow to your project and manage the engagement through completion, including a final impact report for your stakeholders.</p></div>
       </div>
     </div>
@@ -489,10 +493,10 @@
         <p class="form-intro">Tell us about your organization and what you need. We'll be in touch within one week.</p>
         <div class="form-row"><div class="form-group"><input type="text" name="organization" placeholder="Organization name" required></div><div class="form-group"><input type="text" name="contact_name" placeholder="Your name and title" required></div></div>
         <div class="form-row"><div class="form-group"><input type="email" name="email" placeholder="Email address" required></div><div class="form-group"><input type="tel" name="phone" placeholder="Phone number"></div></div>
-        <div class="form-row"><div class="form-group"><input type="url" name="website" placeholder="Organization website"></div><div class="form-group"><select name="service" required><option value="" disabled selected>What kind of help do you need?</option><option>Custom Software & Systems</option><option>Donor Engagement Strategy</option><option>Financial Modeling & Budgeting</option><option>Digital Presence & Marketing</option><option>Operations & Process Improvement</option><option>Impact Analytics & Reporting</option><option>Multiple areas</option><option>Not sure? Help us figure it out</option></select></div></div>
+        <div class="form-row"><div class="form-group"><input type="url" name="website" placeholder="Organization website"></div><div class="form-group"><select name="service" required><option value="" disabled selected>What kind of help do you need?</option><option>Custom Software & Systems</option><option>Donor Engagement Strategy</option><option>Financial Modeling & Budgeting</option><option>Digital Presence & Marketing</option><option>Operations & Process Improvement</option><option>Impact Analytics & Reporting</option><option>Multiple areas</option><option>Something else (describe below)</option><option>Not sure? Help us figure it out</option></select></div></div>
         <div class="form-row"><div class="form-group"><select name="budget"><option value="" disabled selected>Approximate annual budget</option><option>Under $250K</option><option>$250K - $1M</option><option>$1M - $5M</option><option>$5M - $10M</option><option>$10M+</option></select></div><div class="form-group"><select name="timeline"><option value="" disabled selected>Timeline</option><option>ASAP</option><option>1-3 months</option><option>3-6 months</option><option>No rush</option></select></div></div>
         <div class="form-group"><select name="referral"><option value="" disabled selected>How did you hear about Solstice?</option><option>Friend or colleague</option><option>Social media</option><option>Search engine</option><option>Event</option><option>News or press</option><option>Other</option></select></div>
-        <div class="form-group"><textarea name="description" placeholder="Briefly describe the challenge or project you have in mind. If you're not sure, that's fine. We'll figure it out together." required></textarea></div>
+        <div class="form-group"><textarea name="description" placeholder="Describe the challenge or project you have in mind, even if it doesn't fit one of the categories above. What's the problem, who does it affect, and what would success look like?" required></textarea></div>
         <button type="submit" class="btn btn-primary form-submit">Submit Inquiry <span class="btn-arrow">→</span></button>
       </form>
     </div>
